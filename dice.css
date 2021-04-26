@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #F3F5F9;
+    font-size: 14px;
+}
+
+.gameArea{
+    background-color: #FFFFFF;
+    width: 35rem;
+    height: 14rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-top: 1.5em;
+}
+
+/* ========
+character
+=========== */
+
+h2{
+    text-align: center;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.character{
+    display: flex;
+    cursor: pointer;
+}
+
+.robot{
+    width: 4rem;
+    margin: 2.5em;
+}
+
+/* ========
+Player
+=========== */
+
+.player-box{
+    padding: 2.7em 3.15em 2em 3.15em ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.players{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.change-character-player-one,
+.change-character-player-two{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img1,
+.img2,
+.img1-change-one,
+.img1-change-two,
+.img2-change-one,
+.img2-change-two{
+    width: 5rem;
+    border-radius: 100px;
+    padding: .6em .75em;
+    border: solid 2.3px #FFFFFF;
+}
+
+.player-name-one,
+.player-name-two{
+    margin-top: .5em;
+}
+
+
+.gold-medal-one{
+    display: none;
+    width: 1.8rem;
+    position: absolute;
+    top: 55%;
+    left: 8%;
+}
+
+.gold-medal-two{
+    display: none;
+    width: 1.8rem;
+    position: absolute;
+    top: 55%;
+    left: 73%;
+}
+/* ===========
+Score-board
+============== */
+
+.scroll-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px red;
+}
+
+.sroreboard{
+    font-size: 2.8rem;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 50%) ;
+    display: flex;
+    justify-content: center; 
+}
+
+.score{
+    padding: 0 .8rem;
+    margin: 0;
+}
+
+.scoreboard1{
+    color: #514DF7;
+}
+
+.scoreboard2{
+    color: #FF8BB9;
+}
+
+.semicolom{
+    color: #C4C3C3;
+    font-size: 38px;
+}
+
+/* =============
+Dice-result
+================ */
+
+.dice-result{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.dice-img{
+    transform: rotate(45deg)
+}
+
+/* ===========
+button
+============== */
+
+.dice{
+    width: 9rem;
+    padding: 8px 30px;
+    background-color: #514DF7;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+/* Reset-btn */
+.dice-reset{
+    display: none;
+}
+
+/* =============
+Active-circle
+================ */
+
+.border1,
+.border2{
+    border: solid 2.3px #FFFFFF;
+}
+
+.active1{
+    border: solid 2.3px #514DF7;
+    border-radius: 100px;
+}
+
+.active2{
+    border: solid 2.3px #FF8BB9;
+    border-radius: 100px;
+}
+
+/* =============
+Winner
+================ */
+
+.winner {
+    color: #C4C3C3;
+    font-size: 12px;
+    margin: 2em 0 .3em 0;
+}
+
+/* =============
+user input
+================ */
+
+.player-key {
+    margin: 1em;
+}
+
+.player-key-one,
+.player-key-two {
+    padding: .6em;
+    margin: 0 .5em;
+    width: 10rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    outline: none;
+    text-indent: 1rem;
+    box-shadow: 0 50px 182px rgba(0, 0, 0, 0.05);
+}
+
+::placeholder{
+    color: #C4C3C3;
+}
+
+.submit-btn{
+    padding: .52em .7em;
+    background-color: #514DF7;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* credit */
+.credit{
+    display: none;
+    color: grey;
+    position: absolute;
+    top: 95%;
+    left: 3%;
+    font-size: .5em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #514DF7;
+}

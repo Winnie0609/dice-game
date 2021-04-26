@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/dice.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="dice.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5755d4a973.js" crossorigin="anonymous"></script>
+    <title>The Dice Game</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Choose a character and roll the dice!</h2>
+        
+        <div class="character">
+            <img class="character-player-one-first robot" src="./img/robot-1.png">
+            <img class="character-player-one-second robot" src="./img/robot-2.png">
+            <img class="character-player-two-first robot" src="./img/robot-3.png">
+            <img class="character-player-two-second robot" src="./img/robot-4.png">
+        </div>
+          
+        <div class="player-key">
+            <input class="player-key-one" type="text" placeholder="Player One's Name"/>
+            <input class="player-key-two" type="text" placeholder="Player Two's Name"/>
+            <button class="submit-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="winner">⋆ The first player to scores 20 points is the winner of the game. ⋆</div>
+
+        <div class="gameArea">
+
+            <div class="player-box">
+                <div class="players">
+                   
+                    <div class="change-character-player-one">
+                        <div class="border1">
+                            <img class="img1" src="./img/robot-5.png" alt="player one">
+                        </div>
+                    </div>
+
+                    <div class="player-name player-name-one">Player One</div>
+                    <img class="gold-medal-one" src="./img/gold-medal.png">
+                </div>
+
+                <div class="players">
+                     <div class="change-character-player-two">
+                        <div class="border2">
+                            <img class="img2" src="./img/robot-6.png" alt="player one">
+                        </div>
+                    </div>
+
+                    <div class="player-name player-name-two">Player Two</div>
+                    <img class="gold-medal-two" src="./img/gold-medal.png">
+                </div>
+
+            </div>
+
+            <!-- <div class="scroll-container"> -->
+                <div class="sroreboard">
+                    <div class="scoreboard1 score">0</div>
+                    <div class="score semicolom">:</div>
+                    <div class="scoreboard2 score">0</div>
+                </div>
+
+                <div class="dice-result"></div>
+
+                <div>
+                    <button class="dice dice-roll">Roll Dice</button>
+                    <button class="dice dice-reset">Reset Game</button>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    
+    <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+    <script src="dice.js"></script>
+</body>
+</html>
