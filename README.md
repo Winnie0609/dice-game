@@ -2,7 +2,7 @@
 A Dice Game built with Vanilla JS.
 
 ## Demo
-Blog : 
+Blog :   
 ![](https://i.imgur.com/0HcsX0Q.gif)
 
 ## Feature
