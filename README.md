@@ -2,7 +2,8 @@
 A Dice Game built with Vanilla JS.
 
 ## Demo
-Blog :   
+[Blog]()  
+[Live Demo](https://winnie0609.github.io/dice-game/dice.html)  
 ![](https://i.imgur.com/0HcsX0Q.gif)
 
 ## Feature
